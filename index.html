@@ -3,8 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+     <script src="script.js"></script>
   </head>
   <body>
     <h2>Welcome to Charisky</h2>
+    <form class=""  action="index.html" method="post">
+      <input type="text" name="minutesIn" id="minutesIn" value="5">
+      <input type="text" name="secondsIn" id="secondsIn" value="00">
+      <input type="button" name="start" onclick="startClick();" value="Start">
+      <div>Time left: <span id="time">05:00</span> minutes!</div>
+    </form>
   </body>
 </html>
