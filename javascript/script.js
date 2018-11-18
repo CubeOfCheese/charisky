@@ -42,8 +42,3 @@ function startClick() {
   var display = document.querySelector('#time');
   startTimer(setTime, display);
 }
-
-
-function fail() {
-
-}
