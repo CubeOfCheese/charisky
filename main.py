@@ -18,7 +18,13 @@ class About(webapp2.RequestHandler):
         variables = {}
         self.response.write(template.render(variables))
 
+class Charities(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('charities.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/about', About),
+    ('/charities', Charities),
 ], debug=True)
