@@ -9,8 +9,17 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
+
+        if (!document.hasFocus()) {
+          console.log("Clicked off the document");
+          fail(); // need to write
+        }
+        else
+          console.log("Clicked on the document");
+
         if (--timer < 0) {
-            timer = 0;
+            timer = 0; //win
+            
         }
         // if (timer == 0) {
         //     break;
@@ -28,4 +37,9 @@ function startClick() {
   console.log(setTime);
   var display = document.querySelector('#time');
   startTimer(setTime, display);
+}
+
+
+function fail() {
+  
 }
