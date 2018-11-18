@@ -12,11 +12,11 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (!document.hasFocus())
-          document.location.href = "#"; // need to write
+          document.location.href = "/donated"; // need to write
 
         if (--timer < 0) {
             timer = 0; //win
-
+            document.location.href = "/notdonated";
         }
     }, 1000);
 }
@@ -31,9 +31,9 @@ function startClick() {
   var seconds = parseInt(document.getElementById("secondsIn").value);
   var minutes = parseInt(document.getElementById("minutesIn").value);
 
-  document.getElementsByClassName("in1")[0].style.visibility = "hidden";
-  document.getElementsByClassName("in1")[1].style.visibility = "hidden";
-  document.getElementsByClassName("in1")[2].style.visibility = "hidden";
+  document.getElementsByClassName("timer")[0].style.visibility = "hidden";
+  document.getElementsByClassName("timer")[1].style.visibility = "hidden";
+  document.getElementsByClassName("timer")[2].style.visibility = "hidden";
 
   console.log(seconds);
   console.log(minutes*60);

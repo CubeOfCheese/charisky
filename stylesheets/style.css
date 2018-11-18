@@ -2,7 +2,7 @@ body{
   width: 960px;
   margin:auto;
   display: flex 1;
-  background: white;
+  background: gainsboro;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -61,6 +61,20 @@ section {
   display: flex;
   justify-content: center;
 }
+form {
+  display: flex;
+  justify-content: center;
+
+}
+.input-line {
+    justify-content: center;
+}
+.output-line {
+  text-align: center;
+}
+.input {
+  width: 20px;
+}
 
 .charitysec{
   justify-content: space-around;
@@ -78,7 +92,6 @@ section {
 }
 
 .timer{
-  visibility: hidden;
   flex:1;
 }
 

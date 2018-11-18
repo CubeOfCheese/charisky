@@ -19,10 +19,22 @@
       <li><a href="/about">About</a></li>
     </ul>
   </nav>
-
   <h1>
     <img src="images/1.jpg" alt="charity picture" class="charitypic">
   </h1>
+  <br>
+
+<form class="timer" action="index.html" method="post">
+  <div class="input-line">
+    <input class="timer input" type="text" name="minutesIn" id="minutesIn" value="5">
+    <input class="timer input" type="text" name="secondsIn" id="secondsIn" value="00">
+    <input class="timer" type="button" name="start" onclick="startClick();" value="Start">
+  </div>
+
+</form>
+<div class="output-line">
+  Time left: <span id="time">05:00</span> minutes!
+</div>
 
   <section>
     <article class="description">
