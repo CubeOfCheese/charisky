@@ -7,41 +7,67 @@ body{
 }
 
 header{
-  flex:1;
-  background: green;
+  padding: 150px 100px 100px 100px;
 }
 
 nav{
-  height: 50px;
   background: rgba(0, 0, 0, 0.85);
   position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 960px; /* Full width */
+  top: 0;
+  width: 960px;
+  padding: 25px 0 25px 0;
+
 }
 
 ul{
   text-align: center;
-  flex: 1;
+  display:flex;
 }
 
 li{
+  flex: 1;
   display: inline;
-  justify-content: space-between;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, i:hover{
+  color:#26d0dc;
 }
 
 h1{
   display: flex;
   justify-content: center;
-  padding: 100px, 100px, 100px 150px;
 }
 
 .logo{
   height:300px;
-  position:relative;
+}
+
+.timer{
+  visibility: hidden;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 /*------------- Typography -----------------*/
+.textlogo{
+  font-family: 'Bungee', cursive;
+}
 
 h2{
 
+}
+
+i{
+  padding-right: 5px;
+  color: black;
+  font-size: 1.5em;
 }
