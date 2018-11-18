@@ -47,8 +47,16 @@ h1{
   height:300px;
 }
 
+.charity{
+  width: 200px;
+}
+
 .timer{
   visibility: hidden;
+}
+
+section{
+  margin-top: 100px;
 }
 
 footer{
