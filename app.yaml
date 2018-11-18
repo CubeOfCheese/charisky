@@ -4,19 +4,20 @@ threadsafe: true
 
 handlers:
 - url: /
-  script: home.app
-- url: /index\.html
-  script: home.app
-# - url: /stylesheets
-#   static_dir: stylesheets
+  script: main.app
+# - url: /index.html
+#   script: home.app
+- url: /stylesheets
+  static_dir: stylesheets
 # - url: /images
 #   static_dir: images
-# - url: /js
-#   static_dir: js
-# - url: /.*
-#   script: main.app
+- url: /javascript
+  static_dir: javascript
+- url: /.*
+  script: main.app
 #
-# libraries:
-# - name: jinja2
-#   version: latest
-# - name: webapp2
+libraries:
+- name: jinja2
+  version: latest
+- name: webapp2
+  version: latest
