@@ -4,37 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charisky</title>
-  <link href="stylesheets/reset.css" rel="stylesheet">
-  <link href="stylesheets/style.css" rel="stylesheet">
+  <link href="reset.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <script src="../javascript/script.js"> </script>
+  <script src="script.js"> </script>
 </head>
 
 <body>
   <nav>
     <ul>
-      <li id="link1"><a href="/charities">Charities</a></li>
-      <li class=textlogo><a href="/">Charisky</a></li>
-      <li id="link2"><a href="/about">About</a></li>
+      <li><a href="charities.html">Charities</a></li>
+      <li class=textlogo><a href="index.html">Charisky</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <h1>
-    <img src="images/1.jpg" alt="charity picture" class="charitypic">
-  </h1>
-  <br>
 
-<form class="timer" action="index.html" method="post">
-  <div class="input-line">
-    <input class="timer input" type="text" name="minutesIn" id="minutesIn" value="5">
-    <input class="timer input" type="text" name="secondsIn" id="secondsIn" value="00">
+  <form class="timer" action="index.html" method="post">
+    <input class="timer" type="text" name="minutesIn" id="minutesIn" value="5">
+    <input class="timer" type="text" name="secondsIn" id="secondsIn" value="00">
     <input class="timer" type="button" name="start" onclick="startClick();" value="Start">
-  </div>
+    <div>Time left: <span id="time_left_number">05:00</span> minutes!</div>
+  </form>
 
-</form>
-<div class="output-line">
-  Time left: <span id="time">05:00</span> minutes!
-</div>
+  <h1>
+    <img src="1.jpg" alt="charity picture" class="charitypic">
+  </h1>
 
   <section>
     <article class="description">

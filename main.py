@@ -23,8 +23,26 @@ class Charities(webapp2.RequestHandler):
         template = jinja_environment.get_template('charities.html')
         self.response.write(template.render())
 
+class Timer(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('timer.html')
+        self.response.write(template.render())
+
+class Donated(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('donated.html')
+        self.response.write(template.render())
+
+class NotDonated(webapp2.RequestHandler):
+    def get(self):
+        template = jinja_environment.get_template('notdonated.html')
+        self.response.write(template.render())
+
 app = webapp2.WSGIApplication([
     ('/', MainPage),
     ('/about', About),
     ('/charities', Charities),
+    ('/timer', Timer),
+    ('/donated', Donated),
+    ('/notdonated', NotDonated),
 ], debug=True)
