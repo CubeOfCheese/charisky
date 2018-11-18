@@ -7,8 +7,8 @@ handlers:
   script: main.app
 # - url: /index.html
 #   script: home.app
-# - url: /stylesheets
-#   static_dir: stylesheets
+- url: /stylesheets
+  static_dir: stylesheets
 # - url: /images
 #   static_dir: images
 - url: /javascript

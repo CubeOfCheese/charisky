@@ -20,5 +20,5 @@ class About(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-    ('/About', About),
+    ('/about', About),
 ], debug=True)
