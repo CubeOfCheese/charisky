@@ -1,4 +1,3 @@
-
 function startTimer(duration, display) {
   console.log("started Timer")
     var timer = duration, minutes, seconds;
@@ -18,16 +17,14 @@ function startTimer(duration, display) {
             timer = 0; //win
 
         }
+        // if (timer == 0) {
+        //     break;
+        // }
     }, 1000);
 }
 
 
-
 function startClick() {
-  window.name = "Charisky";
-  console.log(window.name);
-  console.log(window.history.length);
-  var tabsOpen = window.history.length;
   var seconds = parseInt(document.getElementById("secondsIn").value);
   var minutes = parseInt(document.getElementById("minutesIn").value);
 
@@ -41,4 +38,9 @@ function startClick() {
   console.log(setTime);
   var display = document.querySelector('#time');
   startTimer(setTime, display);
+}
+
+
+function fail() {
+  
 }

@@ -48,6 +48,7 @@ h1{
 }
 
 section{
+  flex:1;
   margin-top: 100px;
   display:flex;
   justify-content: center;
@@ -55,13 +56,14 @@ section{
 
 article{
   flex:1;
-  justify-content: center;
+  display: flex column;
   text-align: center;
+  justify-content: center;
 }
 
 .charity{
   width: 200px;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 
 .timer{
@@ -89,6 +91,20 @@ i{
   font-size: 1.5em;
 }
 
-h2, .charitysec h2{
+h2{
+  flex:1;
   text-transform: uppercase;
+  font-size: 100px;
+  padding: 50px 0 100px 0;
+}
+
+
+p{
+  max-width: 500px;
+  text-align: left;
+}
+
+.charitysec h3{
+  text-transform: uppercase;
+  margin-top: 25px;
 }
