@@ -97,6 +97,20 @@ footer{
   padding-bottom: 20px;
 }
 
+.pop{
+  flex:1;
+  position:absolute;
+  top: 65px;
+  display: flex;
+  justify-content: center;
+}
+
+.pop img{
+  height:160px;
+  flex: 1;
+  padding: 160px;
+}
+
 /*------------- Typography -----------------*/
 .textlogo{
   font-family: 'Bungee', cursive;
