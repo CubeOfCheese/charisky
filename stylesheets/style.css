@@ -7,7 +7,7 @@ body{
 }
 
 header{
-  padding: 150px 100px 100px 100px;
+  padding: 150px 0px 100px 0px;
 }
 
 nav{
@@ -35,6 +35,15 @@ a{
 }
 
 a:hover, i:hover{
+  -webkit-transition: all 500ms cubic-bezier(0.235, 0.550, 0.815, 0.390);
+     -moz-transition: all 500ms cubic-bezier(0.235, 0.550, 0.815, 0.390);
+       -o-transition: all 500ms cubic-bezier(0.235, 0.550, 0.815, 0.390);
+          transition: all 500ms cubic-bezier(0.235, 0.550, 0.815, 0.390); /* custom */
+
+  -webkit-transition-timing-function: cubic-bezier(0.235, 0.550, 0.815, 0.390);
+     -moz-transition-timing-function: cubic-bezier(0.235, 0.550, 0.815, 0.390);
+       -o-transition-timing-function: cubic-bezier(0.235, 0.550, 0.815, 0.390);
+          transition-timing-function: cubic-bezier(0.235, 0.550, 0.815, 0.390); /* custom */
   color:#26d0dc;
 }
 
@@ -47,13 +56,18 @@ h1{
   height:300px;
 }
 
-section{
+section {
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: 25% auto 25%;
+  display: flex;
+  justify-content: center;
 }
 
-.title {
+.charitysec{
+  justify-content: space-around;
+  text-align: center;
+}
+
+.title{
     display:flex;
     justify-content: center;
 }
@@ -65,6 +79,12 @@ section{
 
 .timer{
   visibility: hidden;
+  flex:1;
+}
+
+.charitypic{
+  height:300px;
+  margin-top: 180px;
 }
 
 #lastrow{
@@ -96,10 +116,31 @@ h2{
   text-align: center;
 }
 
+#hugetext{
+  font-size: 116px;
+}
+
+.largetext{
+  text-align: center;
+  font-size: 100px;
+  padding-bottom:100px;
+}
+
+.midtext{
+  text-align: center;
+  font-size: 36.6px;
+  line-height: 40px;
+  padding-bottom:100px;
+}
 
 p{
   max-width: 500px;
   text-align: left;
+  padding-bottom: 20px;
+}
+
+.description{
+  margin-bottom: 80px;
 }
 
 .charitysec h3{
