@@ -10,16 +10,12 @@ function startTimer(duration, display) {
 
         display.textContent = minutes + ":" + seconds;
 
-        if (!document.hasFocus()) {
-          console.log("Clicked off the document");
-          fail(); // need to write
-        }
-        else
-          console.log("Clicked on the document");
+        if (!document.hasFocus())
+          document.location.href = "#"; // need to write
 
         if (--timer < 0) {
             timer = 0; //win
-            
+
         }
         // if (timer == 0) {
         //     break;
@@ -31,6 +27,11 @@ function startTimer(duration, display) {
 function startClick() {
   var seconds = parseInt(document.getElementById("secondsIn").value);
   var minutes = parseInt(document.getElementById("minutesIn").value);
+
+  document.getElementsByClassName("in1")[0].style.visibility = "hidden";
+  document.getElementsByClassName("in1")[1].style.visibility = "hidden";
+  document.getElementsByClassName("in1")[2].style.visibility = "hidden";
+
   console.log(seconds);
   console.log(minutes*60);
   var setTime = seconds + (minutes*60);
