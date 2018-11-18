@@ -47,16 +47,29 @@ h1{
   height:300px;
 }
 
+section{
+  margin-top: 100px;
+  display:flex;
+  justify-content: center;
+}
+
+article{
+  flex:1;
+  justify-content: center;
+  text-align: center;
+}
+
 .charity{
   width: 200px;
+  padding: 50px 0px 50px 0px;
 }
 
 .timer{
   visibility: hidden;
 }
 
-section{
-  margin-top: 100px;
+#lastrow{
+  padding-bottom: 100px;
 }
 
 footer{
@@ -70,12 +83,12 @@ footer{
   font-family: 'Bungee', cursive;
 }
 
-h2{
-
-}
-
 i{
   padding-right: 5px;
   color: black;
   font-size: 1.5em;
+}
+
+h2, .charitysec h2{
+  text-transform: uppercase;
 }
