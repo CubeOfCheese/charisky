@@ -9,8 +9,8 @@ handlers:
 #   script: home.app
 - url: /stylesheets
   static_dir: stylesheets
-# - url: /images
-#   static_dir: images
+- url: /images
+  static_dir: images
 - url: /javascript
   static_dir: javascript
 - url: /.*
