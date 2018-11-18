@@ -34,7 +34,10 @@ function startClick() {
   document.getElementsByClassName("timer")[0].style.visibility = "hidden";
   document.getElementsByClassName("timer")[1].style.visibility = "hidden";
   document.getElementsByClassName("timer")[2].style.visibility = "hidden";
-
+  document.getElementById("link1").style.visibility = "hidden";
+  document.getElementById("link2").style.visibility = "hidden";
+  document.getElementsByClassName("textlogo")[0].style.visibility = "hidden";
+  
   console.log(seconds);
   console.log(minutes*60);
   var setTime = seconds + (minutes*60);
