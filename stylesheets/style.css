@@ -49,8 +49,13 @@ h1{
 
 section{
   margin-top: 100px;
-  display: grid;
-  grid-template-columns: 25% auto 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.charitysec{
+  justify-content: space-around;
+  text-align: center;
 }
 
 .title {
