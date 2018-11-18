@@ -7,7 +7,7 @@ body{
 }
 
 header{
-  padding: 150px 100px 100px 100px;
+  padding: 150px 0px 100px 0px;
 }
 
 nav{
@@ -47,7 +47,7 @@ h1{
   height:300px;
 }
 
-section{
+section {
   margin-top: 100px;
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@ section{
   text-align: center;
 }
 
-.title {
+.title{
     display:flex;
     justify-content: center;
 }
@@ -70,6 +70,12 @@ section{
 
 .timer{
   visibility: hidden;
+  flex:1;
+}
+
+.charitypic{
+  height:300px;
+  margin-top: 180px;
 }
 
 #lastrow{
@@ -105,6 +111,11 @@ h2{
 p{
   max-width: 500px;
   text-align: left;
+  padding-bottom: 20px;
+}
+
+.description{
+  margin-bottom: 80px;
 }
 
 .charitysec h3{
