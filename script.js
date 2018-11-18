@@ -9,10 +9,12 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
-
         if (--timer < 0) {
-            timer = duration;
+            timer = 0;
         }
+        // if (timer == 0) {
+        //     break;
+        // }
     }, 1000);
 }
 
