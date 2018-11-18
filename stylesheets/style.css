@@ -1,7 +1,73 @@
 body{
+  width: 960px;
+  margin:auto;
+  display: flex 1;
+  background: white;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-head{
-  font-family: arial;
-  font-size: 25pt;
+header{
+  padding: 150px 100px 100px 100px;
+}
+
+nav{
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  width: 960px;
+  padding: 25px 0 25px 0;
+
+}
+
+ul{
+  text-align: center;
+  display:flex;
+}
+
+li{
+  flex: 1;
+  display: inline;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover, i:hover{
+  color:#26d0dc;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+.logo{
+  height:300px;
+}
+
+.timer{
+  visibility: hidden;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/*------------- Typography -----------------*/
+.textlogo{
+  font-family: 'Bungee', cursive;
+}
+
+h2{
+
+}
+
+i{
+  padding-right: 5px;
+  color: black;
+  font-size: 1.5em;
 }
