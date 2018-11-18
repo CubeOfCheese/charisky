@@ -8,13 +8,7 @@ function startTimer(duration, display) {
 
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
-        // if (window.name != "Charisky") {
-        //   console.log(window.name);
-        //   console.log("new tab opened");
-        // }
-        if (window.history.length != tabsOpen) {  // Um, needs to be 0 for IE, 1 for Firefox
-            console.log("new tab opened")
-        }
+
         display.textContent = minutes + ":" + seconds;
 
         if (!document.hasFocus()) {
@@ -26,11 +20,8 @@ function startTimer(duration, display) {
 
         if (--timer < 0) {
             timer = 0; //win
-            
+
         }
-        // if (timer == 0) {
-        //     break;
-        // }
     }, 1000);
 }
 
@@ -53,5 +44,5 @@ function startClick() {
 
 
 function fail() {
-  
+
 }
