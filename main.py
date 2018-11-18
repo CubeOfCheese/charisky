@@ -6,6 +6,8 @@ jinja_environment = jinja2.Environment(
     loader = jinja2.FileSystemLoader(
 os.path.dirname(__file__) + '/templates'))
 
+image = "images/1.jpg"
+
 class MainPage(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('index.html')
@@ -26,7 +28,12 @@ class Charities(webapp2.RequestHandler):
 class Timer(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('timer.html')
-        self.response.write(template.render())
+        global image
+        print image
+        variables = {
+        'image' : image,
+        }
+        self.response.write(template.render(variables))
 
 class Donated(webapp2.RequestHandler):
     def get(self):
