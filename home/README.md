@@ -6,3 +6,5 @@ Else you get your money back: benefit is feel good
 Sponsors used:
 Authorize.net for paying and financial stuff
 Google cloud to host website and datastore
+
+https://charisky-222821.appspot.com/charities
